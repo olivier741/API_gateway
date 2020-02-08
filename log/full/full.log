@@ -1,0 +1,13 @@
+18/02/2019 15:14:13.267  INFO [main] API_GATEWAY: Load log4j config file done.
+18/02/2019 15:14:13.525  INFO [main] XML_ConfigLoader: successfull load : etc\serverConf.xml
+18/02/2019 15:14:13.952  INFO [main] DataSource: user =data
+18/02/2019 15:14:13.952  INFO [main] DataSource: test_table =null
+18/02/2019 15:14:13.953  INFO [main] DataSource: url =jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST=(ADDRESS= (PROTOCOL = TCP)(HOST = 10.124.250.142)(PORT = 1521))(FAILOVER = off)(LOAD_BALANCE = off))(CONNECT_DATA=(SERVICE_NAME = pub)))
+18/02/2019 15:14:13.953  INFO [main] DataSource: password =data2014
+18/02/2019 15:14:13.953  INFO [main] DataSource: driver =oracle.jdbc.driver.OracleDriver
+18/02/2019 15:14:15.236  INFO [main] API_GATEWAY: %%%%%%%%%%% SUCCESSFULL LOAD WEB SERVICE SERVER %%%%%%%%%%%%%%
+18/02/2019 15:19:44.523  INFO [qtp1904288897-19] Sender_SMS: new soap request header param : head1 value : head1
+18/02/2019 15:19:44.523  INFO [qtp1904288897-19] Sender_SMS: new soap request header param : head2 value : head2
+18/02/2019 15:19:44.523  INFO [qtp1904288897-19] Sender_SMS: new soap request body param : body1 value : body1
+18/02/2019 15:19:44.523  INFO [qtp1904288897-19] Sender_SMS: new soap request body param : body2 value : body2
+18/02/2019 15:19:44.523  INFO [qtp1904288897-19] Sender_SMS: #################### START SEND SMS ############################

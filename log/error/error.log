@@ -1,0 +1,177 @@
+15/02/2019 14:14:50.146 ERROR [main] API_GATEWAY: cannot publish webservice :
+org.apache.cxf.service.factory.ServiceConstructionException
+	at org.apache.cxf.jaxb.JAXBDataBinding.initialize(JAXBDataBinding.java:354)
+	at org.apache.cxf.service.factory.AbstractServiceFactoryBean.initializeDataBindings(AbstractServiceFactoryBean.java:86)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.buildServiceFromClass(ReflectionServiceFactoryBean.java:470)
+	at org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean.buildServiceFromClass(JaxWsServiceFactoryBean.java:695)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.initializeServiceModel(ReflectionServiceFactoryBean.java:530)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.create(ReflectionServiceFactoryBean.java:263)
+	at org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean.create(JaxWsServiceFactoryBean.java:199)
+	at org.apache.cxf.frontend.AbstractWSDLBasedEndpointFactory.createEndpoint(AbstractWSDLBasedEndpointFactory.java:103)
+	at org.apache.cxf.frontend.ServerFactoryBean.create(ServerFactoryBean.java:168)
+	at org.apache.cxf.jaxws.JaxWsServerFactoryBean.create(JaxWsServerFactoryBean.java:211)
+	at cm.nexttel.noc.main.API_GATEWAY.main(API_GATEWAY.java:76)
+Caused by: com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String cm.nexttel.noc.bean.Param.getName()
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+	this problem is related to the following location:
+		at java.lang.String cm.nexttel.noc.bean.Param.name
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+Class has two properties of the same name "value"
+	this problem is related to the following location:
+		at public java.lang.String cm.nexttel.noc.bean.Param.getValue()
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+	this problem is related to the following location:
+		at java.lang.String cm.nexttel.noc.bean.Param.value
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:102)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:472)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:302)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1140)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:154)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:247)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:234)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:441)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:641)
+	at org.apache.cxf.common.jaxb.JAXBContextCache$2.run(JAXBContextCache.java:347)
+	at org.apache.cxf.common.jaxb.JAXBContextCache$2.run(JAXBContextCache.java:345)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.common.jaxb.JAXBContextCache.createContext(JAXBContextCache.java:345)
+	at org.apache.cxf.common.jaxb.JAXBContextCache.getCachedContextAndSchemas(JAXBContextCache.java:246)
+	at org.apache.cxf.jaxb.JAXBDataBinding.createJAXBContextAndSchemas(JAXBDataBinding.java:497)
+	at org.apache.cxf.jaxb.JAXBDataBinding.initialize(JAXBDataBinding.java:352)
+	... 10 more
+15/02/2019 14:16:20.656 ERROR [main] API_GATEWAY: cannot publish webservice :
+org.apache.cxf.service.factory.ServiceConstructionException
+	at org.apache.cxf.jaxb.JAXBDataBinding.initialize(JAXBDataBinding.java:354)
+	at org.apache.cxf.service.factory.AbstractServiceFactoryBean.initializeDataBindings(AbstractServiceFactoryBean.java:86)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.buildServiceFromClass(ReflectionServiceFactoryBean.java:470)
+	at org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean.buildServiceFromClass(JaxWsServiceFactoryBean.java:695)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.initializeServiceModel(ReflectionServiceFactoryBean.java:530)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.create(ReflectionServiceFactoryBean.java:263)
+	at org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean.create(JaxWsServiceFactoryBean.java:199)
+	at org.apache.cxf.frontend.AbstractWSDLBasedEndpointFactory.createEndpoint(AbstractWSDLBasedEndpointFactory.java:103)
+	at org.apache.cxf.frontend.ServerFactoryBean.create(ServerFactoryBean.java:168)
+	at org.apache.cxf.jaxws.JaxWsServerFactoryBean.create(JaxWsServerFactoryBean.java:211)
+	at cm.nexttel.noc.main.API_GATEWAY.main(API_GATEWAY.java:76)
+Caused by: com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String cm.nexttel.noc.bean.Param.getName()
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+	this problem is related to the following location:
+		at java.lang.String cm.nexttel.noc.bean.Param.name
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+Class has two properties of the same name "value"
+	this problem is related to the following location:
+		at public java.lang.String cm.nexttel.noc.bean.Param.getValue()
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+	this problem is related to the following location:
+		at java.lang.String cm.nexttel.noc.bean.Param.value
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:102)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:472)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:302)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1140)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:154)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:247)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:234)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:441)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:641)
+	at org.apache.cxf.common.jaxb.JAXBContextCache$2.run(JAXBContextCache.java:347)
+	at org.apache.cxf.common.jaxb.JAXBContextCache$2.run(JAXBContextCache.java:345)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.common.jaxb.JAXBContextCache.createContext(JAXBContextCache.java:345)
+	at org.apache.cxf.common.jaxb.JAXBContextCache.getCachedContextAndSchemas(JAXBContextCache.java:246)
+	at org.apache.cxf.jaxb.JAXBDataBinding.createJAXBContextAndSchemas(JAXBDataBinding.java:497)
+	at org.apache.cxf.jaxb.JAXBDataBinding.initialize(JAXBDataBinding.java:352)
+	... 10 more
+15/02/2019 14:18:09.106 ERROR [main] API_GATEWAY: cannot publish webservice :
+org.apache.cxf.service.factory.ServiceConstructionException
+	at org.apache.cxf.jaxb.JAXBDataBinding.initialize(JAXBDataBinding.java:354)
+	at org.apache.cxf.service.factory.AbstractServiceFactoryBean.initializeDataBindings(AbstractServiceFactoryBean.java:86)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.buildServiceFromClass(ReflectionServiceFactoryBean.java:470)
+	at org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean.buildServiceFromClass(JaxWsServiceFactoryBean.java:695)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.initializeServiceModel(ReflectionServiceFactoryBean.java:530)
+	at org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean.create(ReflectionServiceFactoryBean.java:263)
+	at org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean.create(JaxWsServiceFactoryBean.java:199)
+	at org.apache.cxf.frontend.AbstractWSDLBasedEndpointFactory.createEndpoint(AbstractWSDLBasedEndpointFactory.java:103)
+	at org.apache.cxf.frontend.ServerFactoryBean.create(ServerFactoryBean.java:168)
+	at org.apache.cxf.jaxws.JaxWsServerFactoryBean.create(JaxWsServerFactoryBean.java:211)
+	at cm.nexttel.noc.main.API_GATEWAY.main(API_GATEWAY.java:76)
+Caused by: com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 2 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "name"
+	this problem is related to the following location:
+		at public java.lang.String cm.nexttel.noc.bean.Param.getName()
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+	this problem is related to the following location:
+		at java.lang.String cm.nexttel.noc.bean.Param.name
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+Class has two properties of the same name "value"
+	this problem is related to the following location:
+		at public java.lang.String cm.nexttel.noc.bean.Param.getValue()
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+	this problem is related to the following location:
+		at java.lang.String cm.nexttel.noc.bean.Param.value
+		at cm.nexttel.noc.bean.Param
+		at private java.util.List cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms.param
+		at cm.nexttel.noc.ws.interfaces.jaxws_asm.Send_sms
+
+	at com.sun.xml.bind.v2.runtime.IllegalAnnotationsException$Builder.check(IllegalAnnotationsException.java:102)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.getTypeInfoSet(JAXBContextImpl.java:472)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl.<init>(JAXBContextImpl.java:302)
+	at com.sun.xml.bind.v2.runtime.JAXBContextImpl$JAXBContextBuilder.build(JAXBContextImpl.java:1140)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:154)
+	at com.sun.xml.bind.v2.ContextFactory.createContext(ContextFactory.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:247)
+	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:234)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:441)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:641)
+	at org.apache.cxf.common.jaxb.JAXBContextCache$2.run(JAXBContextCache.java:347)
+	at org.apache.cxf.common.jaxb.JAXBContextCache$2.run(JAXBContextCache.java:345)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.cxf.common.jaxb.JAXBContextCache.createContext(JAXBContextCache.java:345)
+	at org.apache.cxf.common.jaxb.JAXBContextCache.getCachedContextAndSchemas(JAXBContextCache.java:246)
+	at org.apache.cxf.jaxb.JAXBDataBinding.createJAXBContextAndSchemas(JAXBDataBinding.java:497)
+	at org.apache.cxf.jaxb.JAXBDataBinding.initialize(JAXBDataBinding.java:352)
+	... 10 more

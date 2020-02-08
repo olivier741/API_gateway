@@ -1,0 +1,30 @@
+<c3p0-config>
+  <default-config>
+    <property name="checkoutTimeout">60000</property>
+    <property name="initialPoolSize">2</property>
+    <property name="maxIdleTime">10</property>
+    <property name="maxPoolSize">5</property>
+    <property name="minPoolSize">1</property>
+    <!-- <property name="automaticTestTable">con_test</property> -->
+    <!-- <property name="maxIdleTimeExcessConnections">10</property> -->
+    <!-- <property name="maxConnectionAge">60</property> -->
+    <!-- <property name="propertyCycle">1</property> -->
+	<!-- <property name="idleConnectionTestPeriod">5</property> -->
+    <!-- <property name="maxStatementsPerConnection">5</property> -->
+    <!-- <property name="maxAdministrativeTaskTime">4</property> -->
+    <!-- <property name="connectionCustomizerClassName">com.mchange.v2.c3p0.test.TestConnectionCustomizer</property> -->
+    <!-- <property name="unreturnedConnectionTimeout">15</property> -->
+    <!-- <property name="debugUnreturnedConnectionStackTraces">true</property> -->
+    <!-- <property name="dataSourceName">poop</property> -->
+    <!-- <property name="driverClass">org.postgresql.Driver</property> -->
+    <!-- <property name="jdbcUrl">jdbc:postgresql://localhost/c3p0-test</property> -->
+  </default-config>
+
+  <named-config name="dbMonitor">
+		<property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+		<property name="jdbcUrl">jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST=(ADDRESS= (PROTOCOL = TCP)(HOST = 10.124.250.142)(PORT = 1521))(FAILOVER = off)(LOAD_BALANCE = off))(CONNECT_DATA=(SERVICE_NAME = pub)))</property>
+		<property name="user">data</property>
+		<property name="password">data2014</property>	
+   </named-config>
+ 
+</c3p0-config>

@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.smlsoap.org/soap/envelope/" xmlns:web="http://microsolft.com/webservices">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<web:GetPimeNumbers>
+			<web:max>10</web:max>
+		</web:GetPimeNumbers>
+	</soapenv:Body>	
+</soapenv:Envelope>

@@ -1,0 +1,20 @@
+<server>
+     <query>
+		 INSERT INTO mt (mt_id, mo_his_id, msisdn, MESSAGE,receive_time,retry_num,channel) 
+		   VALUES  (mt_seq.NEXTVAL,1 , ?, ?,SYSDATE,0,?)
+	  </query>
+	  
+	 <http_listener>
+		 <http_IP>127.0.0.1</http_IP>
+		 <http_port>8935</http_port>
+		 <ws_security_mode>0</ws_security_mode>
+	 </http_listener>
+	 
+
+	  <!-- configuration of user1 -->
+	  <user_connection user="admin" password="admin">
+			  <client_IP>127.0.0.1</client_IP>
+			  <sub_net>10.124.219.128</sub_net>
+			  <mask>255.255.255.128</mask>
+	  </user_connection> 
+</server>

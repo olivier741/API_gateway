@@ -1,0 +1,19 @@
+15/02/2019 15:03:16.748  INFO [main] API_GATEWAY: Load log4j config file done.
+15/02/2019 15:03:16.937  INFO [main] XML_ConfigLoader: successfull load : etc\serverConf.xml
+15/02/2019 15:03:17.333  INFO [main] DataSource: user =data
+15/02/2019 15:03:17.333  INFO [main] DataSource: test_table =null
+15/02/2019 15:03:17.333  INFO [main] DataSource: url =jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST=(ADDRESS= (PROTOCOL = TCP)(HOST = 10.124.250.142)(PORT = 1521))(FAILOVER = off)(LOAD_BALANCE = off))(CONNECT_DATA=(SERVICE_NAME = pub)))
+15/02/2019 15:03:17.333  INFO [main] DataSource: password =data2014
+15/02/2019 15:03:17.333  INFO [main] DataSource: driver =oracle.jdbc.driver.OracleDriver
+15/02/2019 15:03:18.440  INFO [main] API_GATEWAY: %%%%%%%%%%% SUCCESSFULL LOAD WEB SERVICE SERVER %%%%%%%%%%%%%%
+15/02/2019 15:23:10.513  INFO [main] API_GATEWAY: Load log4j config file done.
+15/02/2019 15:23:10.698  INFO [main] XML_ConfigLoader: successfull load : etc\serverConf.xml
+15/02/2019 15:23:11.065  INFO [main] DataSource: user =data
+15/02/2019 15:23:11.065  INFO [main] DataSource: test_table =null
+15/02/2019 15:23:11.065  INFO [main] DataSource: url =jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS_LIST=(ADDRESS= (PROTOCOL = TCP)(HOST = 10.124.250.142)(PORT = 1521))(FAILOVER = off)(LOAD_BALANCE = off))(CONNECT_DATA=(SERVICE_NAME = pub)))
+15/02/2019 15:23:11.066  INFO [main] DataSource: password =data2014
+15/02/2019 15:23:11.066  INFO [main] DataSource: driver =oracle.jdbc.driver.OracleDriver
+15/02/2019 15:23:13.045  INFO [main] API_GATEWAY: %%%%%%%%%%% SUCCESSFULL LOAD WEB SERVICE SERVER %%%%%%%%%%%%%%
+15/02/2019 15:36:13.319  INFO [qtp1812831622-13] Sender_SMS: new soap request : Test1 value : test1
+15/02/2019 15:36:13.319  INFO [qtp1812831622-13] Sender_SMS: new soap request : Test2 value : test2
+15/02/2019 15:36:13.320  INFO [qtp1812831622-13] Sender_SMS: #################### START SEND SMS ############################
